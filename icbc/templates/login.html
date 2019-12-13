@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中国工商银行登录页</title>
+</head>
+<body>
+<form action="" method="post">
+    <input type="hidden" name ="csrf_token"  value="{{ csrf_token() }}">
+{#    这一行是用于防御的,所有通过post发送表单的地方都需要发送这一行#}
+    <table>
+        <tbody>
+            <tr>
+                <td>邮箱：</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+{#            <tr>#}
+{#                <td>记住我</td>#}
+{#                <td><input type="checkbox" name="remember"></td>#}
+{#            </tr>#}
+            <tr>
+                <td></td>
+                <td><input type="submit" value="立即登录"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
